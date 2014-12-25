@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Appliance Tracker" Height="350" Width="525">
     <Grid>
-        <TextBox Name ="txtTest" HorizontalAlignment="Left" Height="63" Margin="27,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="467" />
+        <TextBox Name ="ResultBlock" HorizontalAlignment="Left" Height="63" Margin="29,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="467" />
         <Button Content="Load File!" HorizontalAlignment="Left" Width="309" Margin="103,0,0,111" Click ="Load_File_Button_Click"  Height="128" VerticalAlignment="Bottom"/>
 
 

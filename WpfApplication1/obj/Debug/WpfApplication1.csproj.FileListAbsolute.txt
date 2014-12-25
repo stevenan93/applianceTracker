@@ -11,3 +11,16 @@ C:\Users\steve_000\Documents\GitHub\WpfApplication1\WpfApplication1\obj\Debug\ap
 C:\Users\steve_000\Documents\GitHub\WpfApplication1\WpfApplication1\obj\Debug\applianceTracker.Properties.Resources.resources
 C:\Users\steve_000\Documents\GitHub\WpfApplication1\WpfApplication1\obj\Debug\applianceTracker.exe
 C:\Users\steve_000\Documents\GitHub\WpfApplication1\WpfApplication1\obj\Debug\applianceTracker.pdb
+C:\Users\steve_000\Documents\GitHub\applianceTracker\WpfApplication1\bin\Debug\applianceTracker.exe.config
+C:\Users\steve_000\Documents\GitHub\applianceTracker\WpfApplication1\obj\Debug\applianceTracker.exe
+C:\Users\steve_000\Documents\GitHub\applianceTracker\WpfApplication1\obj\Debug\applianceTracker.pdb
+C:\Users\steve_000\Documents\GitHub\applianceTracker\WpfApplication1\bin\Debug\applianceTracker.exe
+C:\Users\steve_000\Documents\GitHub\applianceTracker\WpfApplication1\bin\Debug\applianceTracker.pdb
+C:\Users\steve_000\Documents\GitHub\applianceTracker\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
+C:\Users\steve_000\Documents\GitHub\applianceTracker\WpfApplication1\obj\Debug\MainWindow.baml
+C:\Users\steve_000\Documents\GitHub\applianceTracker\WpfApplication1\obj\Debug\MainWindow.g.cs
+C:\Users\steve_000\Documents\GitHub\applianceTracker\WpfApplication1\obj\Debug\App.g.cs
+C:\Users\steve_000\Documents\GitHub\applianceTracker\WpfApplication1\obj\Debug\applianceTracker_MarkupCompile.cache
+C:\Users\steve_000\Documents\GitHub\applianceTracker\WpfApplication1\obj\Debug\applianceTracker.g.resources
+C:\Users\steve_000\Documents\GitHub\applianceTracker\WpfApplication1\obj\Debug\applianceTracker.Properties.Resources.resources
+C:\Users\steve_000\Documents\GitHub\applianceTracker\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache

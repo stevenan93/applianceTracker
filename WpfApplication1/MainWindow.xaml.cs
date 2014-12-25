@@ -59,28 +59,30 @@ namespace WpfApplication1
 
         private void Load_File_Button_Click(object sender, RoutedEventArgs e)
         {
-            string[] lines;
-            lines = new string[10];
-            int count = 0;
             try
             {
-                using (StreamReader sr = new StreamReader("test.txt"))
+                int counter = 0;
+                string line;
+                string[] fileArr;
+                fileArr = new string[10];
+
+                System.IO.StreamReader file = new System.IO.StreamReader("test.txt");
+                while ((line = file.ReadLine()) != null)
                 {
-                    String line = sr.ReadToEnd();
-                    lines[count] = line;
+                    if(line[0] != '*')
+                    {
+                        fileArr[counter] = line;
+                        ++counter;
+                    }
                 }
-                txtTest.Text = lines[0];
+                ResultBlock.Text = fileArr[0];
+                file.Close();
             }
-            catch (Exception ee)
+            catch (IOException)
             {
-                txtTest.Text = "The file could not be read: " + ee.Message;
+                ResultBlock.Text = "File not found";
             }
-            
         }
 
-        private void readFromFile()
-        {
-
-        }
     }
 }

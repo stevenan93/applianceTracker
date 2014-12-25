@@ -1,0 +1,5 @@
+File I/O worked out
+
+-added a file input output operation
+-added a comment mechanism using '*'
+-button resizing
