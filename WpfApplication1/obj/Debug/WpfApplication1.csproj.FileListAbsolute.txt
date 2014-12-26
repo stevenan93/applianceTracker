@@ -24,3 +24,16 @@ C:\Users\steve_000\Documents\GitHub\applianceTracker\WpfApplication1\obj\Debug\a
 C:\Users\steve_000\Documents\GitHub\applianceTracker\WpfApplication1\obj\Debug\applianceTracker.g.resources
 C:\Users\steve_000\Documents\GitHub\applianceTracker\WpfApplication1\obj\Debug\applianceTracker.Properties.Resources.resources
 C:\Users\steve_000\Documents\GitHub\applianceTracker\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
+C:\Users\Steven An\Github\applianceTracker\WpfApplication1\bin\Debug\applianceTracker.exe.config
+C:\Users\Steven An\Github\applianceTracker\WpfApplication1\obj\Debug\applianceTracker.exe
+C:\Users\Steven An\Github\applianceTracker\WpfApplication1\obj\Debug\applianceTracker.pdb
+C:\Users\Steven An\Github\applianceTracker\WpfApplication1\bin\Debug\applianceTracker.exe
+C:\Users\Steven An\Github\applianceTracker\WpfApplication1\bin\Debug\applianceTracker.pdb
+C:\Users\Steven An\Github\applianceTracker\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Steven An\Github\applianceTracker\WpfApplication1\obj\Debug\MainWindow.baml
+C:\Users\Steven An\Github\applianceTracker\WpfApplication1\obj\Debug\MainWindow.g.cs
+C:\Users\Steven An\Github\applianceTracker\WpfApplication1\obj\Debug\App.g.cs
+C:\Users\Steven An\Github\applianceTracker\WpfApplication1\obj\Debug\applianceTracker_MarkupCompile.cache
+C:\Users\Steven An\Github\applianceTracker\WpfApplication1\obj\Debug\applianceTracker.g.resources
+C:\Users\Steven An\Github\applianceTracker\WpfApplication1\obj\Debug\applianceTracker.Properties.Resources.resources
+C:\Users\Steven An\Github\applianceTracker\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache

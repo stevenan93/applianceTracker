@@ -1,2 +1,8 @@
-hello world
-sup
+*name of appliance
+*hours used
+*minutes used
+*kwH used
+Water Heater
+20
+10
+1.4

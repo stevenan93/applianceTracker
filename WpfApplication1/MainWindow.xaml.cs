@@ -43,6 +43,14 @@ namespace WpfApplication1
             minutes = min;
             kwh = k;
         }
+
+        public string applianceToString()
+        {
+            string output = "Name: " + name;
+            output += "\nHours: " + hours + "\nMinutes: " 
+                        + minutes + "\nkwH: " + kwh;
+            return output;
+        }
     }
 
     public partial class MainWindow : Window
@@ -75,7 +83,15 @@ namespace WpfApplication1
                         ++counter;
                     }
                 }
-                ResultBlock.Text = fileArr[0];
+                if (counter != 0)
+                {
+                    int n = 0;
+                    //ResultBlock.Text = fileArr[0];
+                    appliance appIn = new appliance(fileArr[n], 20, 20, 12);
+                    ResultBlock.Text = appIn.applianceToString();
+                }
+                else
+                    ResultBlock.Text = "Empty file?";
                 file.Close();
             }
             catch (IOException)

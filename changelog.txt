@@ -1,3 +1,10 @@
+Now reads actual data
+
+-Read into appliance class
+-Added applianceToString method, converts appliance into a concatenated string 
+containing all the private members of that appliance
+-Resized button and output window
+
 File I/O worked out
 
 -added a file input output operation
