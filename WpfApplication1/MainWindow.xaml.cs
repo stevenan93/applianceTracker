@@ -21,6 +21,8 @@ namespace WpfApplication1
     /// 
     ///
     /// </summary>
+    /// 
+
     public class appliance
     {
         private string name;
@@ -72,9 +74,9 @@ namespace WpfApplication1
                 int counter = 0;
                 string line;
                 string[] fileArr;
-                fileArr = new string[10];
+                fileArr = new string[50];
 
-                System.IO.StreamReader file = new System.IO.StreamReader("test.txt");
+                System.IO.StreamReader file = new System.IO.StreamReader("data.txt");
                 while ((line = file.ReadLine()) != null)
                 {
                     if(line[0] != '*')
@@ -83,15 +85,27 @@ namespace WpfApplication1
                         ++counter;
                     }
                 }
+                if(counter % 4 == 0)
+                {
+                    ResultBlock.Text = Convert.ToString(counter / 4) + " appliances registered.";
+                }
+                else
+                {
+                    ResultBlock.Text = "Corrupted file, or irregular number of lines in file. Each appliance should have 4 fields.";
+                }
                 if (counter != 0)
                 {
                     int n = 0;
                     //ResultBlock.Text = fileArr[0];
-                    appliance appIn = new appliance(fileArr[n], 20, 20, 12);
-                    ResultBlock.Text = appIn.applianceToString();
+                    appliance appIn = new appliance(fileArr[n], Convert.ToInt32(fileArr[n + 1]), Convert.ToInt32(fileArr[n + 2]), Convert.ToDouble(fileArr[n + 3]));
+                    //ResultBlock.Text = appIn.applianceToString();
+                    //ResultBlock.Text = Convert.ToString(counter) ;
                 }
                 else
+                {
                     ResultBlock.Text = "Empty file?";
+                }
+                    
                 file.Close();
             }
             catch (IOException)

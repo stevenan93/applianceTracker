@@ -1,0 +1,16 @@
+*Name
+*Hours
+*Minutes
+*kwH
+Keurig Coffee Machine
+49
+11 
+0.96
+Electric Blanket
+94
+52
+0.84
+Steven's PC
+601
+0
+28.16

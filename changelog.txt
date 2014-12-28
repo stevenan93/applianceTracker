@@ -1,3 +1,12 @@
+Need to restructure function direction
+
+-Perhaps click button will load into array, then pass that into a menu function
+-Data.txt has actual information
+-Displays number of appliances loaded upon file load
+-Changed appliance c_tor to add actual values instead of dummy ones
+-A lot of work to do 
+
+
 Now reads actual data
 
 -Read into appliance class
