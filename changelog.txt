@@ -1,3 +1,13 @@
+Major program restructure
+
+-Each function now has a more focused task
+-Easily more debuggable
+-Made appliance array accessible to entire MainWindow class
+-A lot easier than passing the array around
+-Revamped layout of program
+-Implemented DisplayAllAppliances()
+-Linked button to DisplayAllAppliances
+
 Need to restructure function direction
 
 -Perhaps click button will load into array, then pass that into a menu function

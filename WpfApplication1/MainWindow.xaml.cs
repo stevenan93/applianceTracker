@@ -38,6 +38,11 @@ namespace WpfApplication1
             kwh = 0.00;
         }
 
+        public string getName()
+        {
+            return name;
+        }
+
         public appliance(string nm, int hr, int min, double k)
         {
             name = nm;
@@ -49,7 +54,7 @@ namespace WpfApplication1
         public string applianceToString()
         {
             string output = "Name: " + name;
-            output += "\nHours: " + hours + "\nMinutes: " 
+            output += "\nTime: " + hours + ":" 
                         + minutes + "\nkwH: " + kwh;
             return output;
         }
@@ -57,16 +62,39 @@ namespace WpfApplication1
 
     public partial class MainWindow : Window
     {
+        private appliance[] appArr= new appliance[50];
+        private int appCount = 0;
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void txtTest_TextInput(object sender, TextCompositionEventArgs e)
+        private void displayAllAppliances(object sender, RoutedEventArgs e)
         {
-
+            ResultBlock.Text += System.Environment.NewLine;
+            for (int i = 0; i < appCount; i++)
+            {
+                ResultBlock.Text += System.Environment.NewLine + appArr[i].applianceToString()
+                    + System.Environment.NewLine;
+            }
         }
 
+
+        //called from Load_File_Button_Click, makes an array of appliances
+        private void makeAppliances(string[] arrIn, int count)
+        {
+            appCount = count / 4;
+            int j = 0; //for the appArray 
+            for(int i = 0; i < count; i = i + 4)
+            {
+                appliance newApp = new appliance(arrIn[i], Convert.ToInt32(arrIn[i + 1]), Convert.ToInt32(arrIn[i + 2]), Convert.ToDouble(arrIn[i + 3]));
+                appArr[j] = newApp;
+                j++;
+            }
+        }
+
+
+        //upon button click, loads data from file into a string array
         private void Load_File_Button_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -93,19 +121,8 @@ namespace WpfApplication1
                 {
                     ResultBlock.Text = "Corrupted file, or irregular number of lines in file. Each appliance should have 4 fields.";
                 }
-                if (counter != 0)
-                {
-                    int n = 0;
-                    //ResultBlock.Text = fileArr[0];
-                    appliance appIn = new appliance(fileArr[n], Convert.ToInt32(fileArr[n + 1]), Convert.ToInt32(fileArr[n + 2]), Convert.ToDouble(fileArr[n + 3]));
-                    //ResultBlock.Text = appIn.applianceToString();
-                    //ResultBlock.Text = Convert.ToString(counter) ;
-                }
-                else
-                {
-                    ResultBlock.Text = "Empty file?";
-                }
-                    
+
+                makeAppliances(fileArr, counter);
                 file.Close();
             }
             catch (IOException)
@@ -113,6 +130,5 @@ namespace WpfApplication1
                 ResultBlock.Text = "File not found";
             }
         }
-
     }
 }
