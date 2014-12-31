@@ -22,25 +22,32 @@ namespace WpfApplication1
     ///
     /// </summary>
     /// 
-
     public class appliance
     {
         private string name;
         private int hours;
         private int minutes;
         private double kwh;
+        private double usageRate;
+        private const double costPerKWH = 0.152;
+        //private double cost;
 
-        public appliance()
-        {
-            name = " ";
-            hours = 0;
-            minutes = 0;
-            kwh = 0.00;
-        }
+        //public appliance()
+        //{
+        //    name = " ";
+        //    hours = 0;
+        //    minutes = 0;
+        //    kwh = 0.00;
+        //}
 
         public string getName()
         {
             return name;
+        }
+
+        public double getCost()
+        {
+            return costPerKWH;
         }
 
         public appliance(string nm, int hr, int min, double k)
@@ -49,13 +56,16 @@ namespace WpfApplication1
             hours = hr;
             minutes = min;
             kwh = k;
+            usageRate = Math.Round(kwh / hours, 5) * 1000;
         }
 
         public string applianceToString()
         {
             string output = "Name: " + name;
-            output += "\nTime: " + hours + ":" 
-                        + minutes + "\nkwH: " + kwh;
+            output += "\nTime: " + hours + ":"
+                        + minutes + "\nkwH: " + kwh
+                        + "\nRate: " + usageRate
+                        +" millijoules per second";
             return output;
         }
     }
@@ -115,7 +125,10 @@ namespace WpfApplication1
                 }
                 if(counter % 4 == 0)
                 {
+                    //appliance app = new appliance();
+                    //ResultBlock.Text = "The current price per KWH in California is $" + Convert.ToString(app.getCost());
                     ResultBlock.Text = Convert.ToString(counter / 4) + " appliances registered.";
+                 
                 }
                 else
                 {
@@ -129,6 +142,16 @@ namespace WpfApplication1
             {
                 ResultBlock.Text = "File not found";
             }
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            //// ... Get control that raised this event.
+            //var textBox = sender as TextBox;
+            //double cost = Convert.ToDouble(textBox);
+            //// ... Change Window Title.
+            //this.Title = textBox.Text +
+            //"[Length = " + textBox.Text.Length.ToString() + "]";
         }
     }
 }

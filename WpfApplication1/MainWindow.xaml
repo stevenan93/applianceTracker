@@ -6,6 +6,8 @@
         <TextBox Name ="ResultBlock" HorizontalAlignment="Left" Height="243" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="497" />
         <Button Content="Load File!" HorizontalAlignment="Left" Width="71" Margin="10,0,0,10" Click ="Load_File_Button_Click"  Height="40" VerticalAlignment="Bottom"/>
         <Button Content="View Appliances" HorizontalAlignment="Left" Width="105" Margin="97,0,0,10" Click ="displayAllAppliances"  Height="40" VerticalAlignment="Bottom"/>
+        <TextBox HorizontalAlignment="Left" Height="28" Margin="216,269,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="286,300,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
 
 
     </Grid>
